@@ -4,6 +4,7 @@ import decode from 'jwt-decode';
 import Usercard from './Usercard';
 import Tweetpostcard from './Tweetpostcard';
 import Feed from './Feed';
+import Allusers from './Allusers';
 
 const Container=styled.div`
     padding:15px;
@@ -15,12 +16,14 @@ const Feeddiv=styled.div`
     width:50%;
     margin-left:40px;
 `;
-
+const Listuser=styled.div`
+    margin-left:40px;
+`;
 export default function Content(){
     let user = decode(localStorage.getItem('token'));
     user=user.user;
     let username=user.username;
-    console.log(user);
+
     return (
         <Container>
             <Profile>
@@ -30,7 +33,10 @@ export default function Content(){
                 <Tweetpostcard/>
                 <Feed/>
             </Feeddiv>
-            <div></div>
+            <Listuser>
+                <h3>All Users</h3>
+                <Allusers user={user}/>
+            </Listuser>
         </Container>
     );
 }

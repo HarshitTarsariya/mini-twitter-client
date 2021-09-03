@@ -21,7 +21,7 @@ export const reqI= axios.interceptors.request.use(
         
         const token=res.headers['x-token'];
         const refreshToken=res.headers['x-refresh-token'];
-
+        // console.log(token);
         if(token && refreshToken){
             localStorage.setItem('token',token);
             localStorage.setItem('refreshToken',refreshToken);

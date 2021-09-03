@@ -23,7 +23,7 @@ export default function Feed(){
             }
             setTweets(data.tweets);
         });
-    }, [tweets])
+    }, [])
 
     return (
         <FeedS>

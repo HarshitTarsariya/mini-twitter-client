@@ -2,8 +2,9 @@ import React from 'react';
 import axios from "axios";
 
 import { useState } from "react";
-import { Header, Input,Container, Button, Message, Form } from 'semantic-ui-react';
+import {  Header,Input,Container, Button, Message, Form } from 'semantic-ui-react';
 import { useHistory } from "react-router-dom";
+import Header1 from '../components/Header';
 
 const baseUrl='http://localhost:3000/';
 const Login=(props,context) => {
@@ -74,7 +75,8 @@ const Login=(props,context) => {
         history.push('/register');
     };
 
-    return (
+    return ([
+        <Header1/>,
         <Container text>
             <br/>
             <Form>
@@ -100,7 +102,7 @@ const Login=(props,context) => {
                 ) : null}
 
         </Container>
-    );
+    ]);
 }
 
 export default Login;
