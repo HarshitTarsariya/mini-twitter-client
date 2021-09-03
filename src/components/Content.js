@@ -1,34 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
 import decode from 'jwt-decode';
+import Usercard from './Usercard';
+import Tweetpostcard from './Tweetpostcard';
+import Feed from './Feed';
 
 const Container=styled.div`
-    padding:8px;
+    padding:15px;
     display:flex;
 `;
 const Profile=styled.div`
-    flex-grow:1;
-    margin:2px;
 `;
 const Feeddiv=styled.div`
-    flex-grow:2;
+    width:50%;
+    margin-left:40px;
 `;
 
 export default function Content(){
     let user = decode(localStorage.getItem('token'));
-    let username=user.user.username;
+    user=user.user;
+    let username=user.username;
     console.log(user);
     return (
         <Container>
             <Profile>
-                <div>
-                    {username}          
-                </div>
-
+                <Usercard user={user}/>
             </Profile>
             <Feeddiv>
+                <Tweetpostcard/>
+                <Feed/>
             </Feeddiv>
-            <div>This is add</div>
+            <div></div>
         </Container>
     );
 }

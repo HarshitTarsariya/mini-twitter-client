@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 
 export const reqI= axios.interceptors.request.use(
     (req) => {
@@ -24,7 +25,6 @@ export const reqI= axios.interceptors.request.use(
         if(token && refreshToken){
             localStorage.setItem('token',token);
             localStorage.setItem('refreshToken',refreshToken);
-            // console.log(token,refreshToken);
         }
         
         return res;
