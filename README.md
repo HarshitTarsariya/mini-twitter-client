@@ -8,12 +8,12 @@
 
 ### Following are images of preview:
 * Login
-    ![](https://raw.githubusercontent.com/HarshitTarsariya/mini-twitter-client/master/preview%20Image/login.png?token=APLJGDJ46GWZWCFKMHQDSPTBGJLUG)
+    ![](https://github.com/HarshitTarsariya/mini-twitter-client/blob/master/preview%20Image/login.png?raw=true)
 * Register
-    ![](https://raw.githubusercontent.com/HarshitTarsariya/mini-twitter-client/master/preview%20Image/register.png?token=APLJGDJOLRYMFCKGX3RCPNDBGJLWY)
+    ![](https://github.com/HarshitTarsariya/mini-twitter-client/blob/master/preview%20Image/register.png?raw=true)
 * Following
-    ![](https://raw.githubusercontent.com/HarshitTarsariya/mini-twitter-client/master/preview%20Image/following.png?token=APLJGDKA2E4JCHV6272APEDBGJLZO)
+    ![](https://github.com/HarshitTarsariya/mini-twitter-client/blob/master/preview%20Image/following.png?raw=true)
 * Unfollowing (breaking sometime)
-    ![](https://raw.githubusercontent.com/HarshitTarsariya/mini-twitter-client/master/preview%20Image/unfollowing.png?token=APLJGDNWAEVMHYN6DGNPYCDBGJL4C)
+    ![](https://github.com/HarshitTarsariya/mini-twitter-client/blob/master/preview%20Image/unfollowing.png?raw=true)
 * Tweet
-    ![](https://raw.githubusercontent.com/HarshitTarsariya/mini-twitter-client/master/preview%20Image/tweet.png?token=APLJGDNBLQKLEI4WSNEYORLBGJL6S)
+    ![](https://github.com/HarshitTarsariya/mini-twitter-client/blob/master/preview%20Image/tweet.png?raw=true)
