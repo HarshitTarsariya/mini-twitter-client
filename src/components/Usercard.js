@@ -10,7 +10,7 @@ const  Usercard= ({user:{username}}) => (
         size='mini'
         src='https://react.semantic-ui.com/images/avatar/large/steve.jpg'
       />
-      <Card.Header>{username}</Card.Header>
+      <Card.Header>Hey, {username}</Card.Header>
       <Card.Meta>India</Card.Meta>
     </Card.Content>
     <Card.Content extra>
