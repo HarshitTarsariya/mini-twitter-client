@@ -4,7 +4,7 @@ import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import reportWebVitals from './reportWebVitals';
 import Routes from './routes';
-
+import {reqI,resI} from './interceptors/tokenInterceptor';
 const App=(
   <Routes/>
 );

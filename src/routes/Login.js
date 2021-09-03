@@ -53,16 +53,19 @@ const Login=(props,context) => {
         }).then(({data})=>{
             setUsernameerror('');
             setPassworderror('');
-            if(!data.auth){
-                if(data.path==="username"){
+            const {auth,path,token,refreshToken}=data;
+            if(!auth){
+                if(path==="username"){
                     setUsernameerror('Invalid Username Provided');
                     return;
                 }
-                if(data.path==="password"){
+                if(path==="password"){
                     setPassworderror('Invalid Password Provided');
                     return;
                 }
             }else{
+                localStorage.setItem('token',token);
+                localStorage.setItem('refreshToken',refreshToken);
                 history.push('/home');
             }
         });

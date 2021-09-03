@@ -1,4 +1,12 @@
 import React from 'react';
+import Header from '../components/Header';
+import Content from '../components/Content';
+
 export default function Home(){
-    return (<div>This is Home</div>);
+    return (
+        <div>
+            <Header/>
+            <Content/>
+        </div>
+    );
 }
